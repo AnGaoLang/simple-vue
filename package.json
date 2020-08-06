@@ -1,0 +1,25 @@
+{
+  "name": "simple-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "release": "tsc && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnGaoLang/simple-vue.git"
+  },
+  "author": "angaolang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnGaoLang/simple-vue/issues"
+  },
+  "homepage": "https://github.com/AnGaoLang/simple-vue#readme",
+  "dependencies": {
+    "typescript": "^3.9.7"
+  }
+}
