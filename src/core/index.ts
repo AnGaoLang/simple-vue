@@ -1,3 +1,5 @@
+ import Observer from './observer/index';
+
  export default class MyVue implements IVue {
   public $el:Element| string | never
   public $data: IVOptions.Data
@@ -7,10 +9,13 @@
   
   constructor(options?: IVueOptions) {
     // this.$el = options.el && document.querySelector(options.el);
-    this.$el = options.el
+    this.$el = options.el;
     this.$data = options.data;
     this.$methods = options .methods;
     this.$options = options;
+    if (this.$el) {
+      new Observer(this.$data)
+    }
 
     return this._proxyData(this.$data);
   }

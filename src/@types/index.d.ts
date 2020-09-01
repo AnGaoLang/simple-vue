@@ -1,4 +1,4 @@
-declare const sym: unique symbol
+declare const sym: unique symbol // 声明唯一的symbol
 
 declare namespace IVOptions {
   type El = string
@@ -21,7 +21,7 @@ interface IVueOptions {
 }
 
 declare interface IVue {
-  $el: Element| string | never
+  $el: Element | string | never
   $data: IVOptions.Data
   $methods: IVOptions.Methods
   $options: IVueOptions
